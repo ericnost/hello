@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from hello import __version__
 
@@ -10,5 +10,5 @@ setup(
     author='Eric Nost',
     author_email='enost@uoguelph.ca',
 
-    py_modules=['hello'],
+    packages=find_packages()
 )
